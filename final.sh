@@ -2,9 +2,6 @@
 
 #Author: Bianca Van Der Merwe
 #ID: 10389192
-#!/bin/bash
-# Bash Menu Script Example
-
 #version 10, stuggled with part 3 and 4.struggling with range() set).
 
 
@@ -17,6 +14,11 @@ curl -s "https://www.ecu.edu.au/service-centres/MACSC/gallery/gallery.php?folder
 cat specificdownload.txt | grep -Eo '(http|https)://[^"]+' | grep ".jpg" | sed 's/.*\///' > spfdownlist.txt         #using the specificdownload.txt, grep removes all the http(s):// that it can find
                                                                                                                     #grep then finds everything that has ".jpg" in it, and removes everything before the last "/
                                                                                                                     #this is then written to a new file to save the nicely named file of  spfdownlist.txt
+awk 'BEGIN {FS="^"; print "\n"}{ ORS=" "; print "\t"}{print ; if(++onr%10 == 0) print "\n"}' spfdownlist.txt #while using the file seperate, print that on a new line
+                                                                                                                # Output record separator prints a space between the output, and tab's then to the righy
+                                                                                                                #in one line, if the vairables are more than 10 print it in a new line.
+echo -e "\n\n"  #printed a new line for visual purposes
+
 while true; do                                                                                          #entering a while loop, easier way to handle if they have not entered the correct thing
 read -p "What is the number of the thumbnail you would like to downlaod ? DSC0_____: " thumbspfd         #obtaining the user's response
 startspfd="DSC0"$thumbspfd                                                                              # adding on a DSCinfront og the users input
@@ -27,7 +29,7 @@ endspfd=$startspfd".jpg"                                                        
                                                                                                         #using wget, get all addresss from the address
                                                                                                         #use grep to find anything that matches the user input with the added DSC infront
         echo "PROGRAM FINISHED"             #to display to user that this section of work is complete
-        exit 1                              #to stop this part of download
+         break                             #to stop this part of download
     else
         echo "Please only enter 4 digits. eg 1565 "     #if the user has emnetered anytyhing other than digits, an error will be display asking a correct input.
     fi                  #stopping the if statement
@@ -70,7 +72,7 @@ randir()
     if [[ $minexists -eq 0 ]]; then                              #if it is not in my list, then print out saying that it is invalid
         echo -e "This is not a valid thumbnai name. Please try again. \n"
     else
-        echo "The start of the rang is set to DSC0$minrange.jpg"      #if it is in my list, print out saying that it is in my listvand the start of the range is set
+        echo "The start of the range is set to DSC0$minrange.jpg"      #if it is in my list, print out saying that it is in my listvand the start of the range is set
         break     
     fi
     done
@@ -81,7 +83,7 @@ randir()
     if [[ $maxexists -eq 0 ]]; then                          #if it is not in my list, then print out saying that it is invalid
         echo -e "This is not a valid thumbnai name. Please try again. \n"
     else
-        echo "The end of the rang is set to DSC0$maxrange.jpg"    #if it is in my list, print out saying that it is in my listvand the start of the range is set
+        echo "The end of the range is set to DSC0$maxrange.jpg"    #if it is in my list, print out saying that it is in my listvand the start of the range is set
         break
     fi
     done
@@ -117,19 +119,19 @@ setdir()
 menuPresent()               #the menu function
 {
 MenuOption='Please enter your choice: '         #Displaying the output choice for user
-choices=("Download specific thumnail" "Download all thumnails" "Download thumnails in range" "Download set number of times" "Quit")     #The choices avaialbe for the user to choose from is between the ()
+choices=("Download specific thumbnail" "Download all thumbnails" "Download thumbnails in range" "Download set number of times" "Quit")     #The choices avaialbe for the user to choose from is between the ()
 select opt in "${choices[@]}"               #the users input will determin what the part of the case study will go to
 do
     case $opt in
-        "Download specific thumnail")               #if the first option is chosen, the specific download fucntion will start, a text will just print to say what the user has chosen
+        "Download specific thumbnail")               #if the first option is chosen, the specific download fucntion will start, a text will just print to say what the user has chosen
             echo "Option 1 was chosen, a specific thumbnail download."
             specificDown
             ;;                                              # the ;; is to stop this part of the case statement
-        "Download all thumnails")                   #if the second option is chosen, the all download fucntion will start, a text will just print to say what the user has chosen
+        "Download all thumbnails")                   #if the second option is chosen, the all download fucntion will start, a text will just print to say what the user has chosen
             echo "Option 2 was chosen, all thumbnail download."
             allDown
             ;;                                               # the ;; is to stop this part of the case statement
-        "Download thumnails in range")               #if the third option is chosen, the range download fucntion will start, a text will just print to say what the user has chosen
+        "Download thumbnails in range")               #if the third option is chosen, the range download fucntion will start, a text will just print to say what the user has chosen
             echo "Option 3 was chosen, download thumbnail in range."
             randir
             ;;                                                # the ;; is to stop this part of the case statement

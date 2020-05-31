@@ -1,0 +1,873 @@
+<!doctype html>
+<!--[if IE]><![endif]-->
+<!--[if lt IE 7]>      <html lang="en" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" class="no-js gt-ie9"> <!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>Media Gallery : Brand and Marketing | ECU</title>
+
+<link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
+<link rel="dns-prefetch" href="https://cdn.ecu.net.au">
+<link rel="icon" type="image/png" href="https://cdn.ecu.net.au/favicon.ico">
+
+<meta name="description" content="Media Gallery, Brand and Marketing">
+<meta name="keywords" content="ECU">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-title" content="Media Gallery">
+
+<!-- Load jQuery UI Core CSS, Version 1.11.4 -->
+<link href="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.css" rel="stylesheet">
+
+<!-- Load Bootstrap Core CSS (Customised), Version 3.2.0 -->
+<link href="https://cdn.ecu.net.au/__data/assets/css_file/0009/625077/bootstrap.min.css" rel="stylesheet">
+
+<!-- Load Font Awesome, Version 4.7.0 -->
+<link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+<!-- Load Sidr, Version 2.2.1 -->
+<link href="//cdnjs.cloudflare.com/ajax/libs/sidr/2.2.1/stylesheets/jquery.sidr.dark.min.css" rel="stylesheet">
+
+<!-- Load ECU Application Style CSS -->
+<link href="https://cdn.ecu.net.au/__data/assets/css_file/0008/623924/static.css" rel="stylesheet">
+
+<!-- Load ECU Application Style CSS -->
+<link href="/_common/template-2015.css" rel="stylesheet">
+
+<style>
+
+    @font-face {
+        font-family: 'HouschkaProDemiBoldRegular';
+        src: url('https://cdn.ecu.net.au/__data/assets/file/0010/373663/houschkapro-demibold-webfont.eot');
+        src: url('https://cdn.ecu.net.au/__data/assets/file/0010/373663/houschkapro-demibold-webfont.eot?#iefix') format('embedded-opentype'),
+             url('https://cdn.ecu.net.au/__data/assets/file/0003/373665/houschkapro-demibold-webfont.woff') format('woff'),
+             url('https://cdn.ecu.net.au/__data/assets/file/0011/373664/houschkapro-demibold-webfont.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: 'HouschkaProBoldRegular';
+        src: url('https://cdn.ecu.net.au/__data/assets/file/0019/605242/houschkapro-bold-webfont.eot');
+        src: url('https://cdn.ecu.net.au/__data/assets/file/0019/605242/houschkapro-bold-webfont.eot?#iefix') format('embedded-opentype'),
+             url('https://cdn.ecu.net.au/__data/assets/file/0005/605246/houschkapro-bold-webfont.woff') format('woff'),
+             url('https://cdn.ecu.net.au/__data/assets/file/0004/605245/houschkapro-bold-webfont.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: 'HouschkaProMediumRegular';
+        src: url('https://cdn.ecu.net.au/__data/assets/file/0005/373667/houschkapro-medium-webfont.eot');
+        src: url('https://cdn.ecu.net.au/__data/assets/file/0005/373667/houschkapro-medium-webfont.eot?#iefix') format('embedded-opentype'),
+             url('https://cdn.ecu.net.au/__data/assets/file/0007/373669/houschkapro-medium-webfont.woff') format('woff'),
+             url('https://cdn.ecu.net.au/__data/assets/file/0006/373668/houschkapro-medium-webfont.ttf ') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: 'HouschkaProLightRegular';
+        src: url('https://cdn.ecu.net.au/__data/assets/file/0006/605247/houschkapro-light-webfont.eot');
+        src: url('https://cdn.ecu.net.au/__data/assets/file/0006/605247/houschkapro-light-webfont.eot?#iefix') format('embedded-opentype'),
+             url('https://cdn.ecu.net.au/__data/assets/file/0018/605250/houschkapro-light-webfont.woff') format('woff'),
+             url('https://cdn.ecu.net.au/__data/assets/file/0008/605249/houschkapro-light-webfont.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: 'droid_serifitalic';
+        src: url('https://cdn.ecu.net.au/__data/assets/file/0008/513395/droidserif-italic-webfont.eot');
+        src: url('https://cdn.ecu.net.au/__data/assets/file/0008/513395/droidserif-italic-webfont.eot?#iefix') format('embedded-opentype'),
+             url('https://cdn.ecu.net.au/__data/assets/file/0010/513397/droidserif-italic-webfont.woff') format('woff'),
+             url('https://cdn.ecu.net.au/__data/assets/file/0007/513394/droidserif-italic-webfont.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+     }
+
+</style>
+
+<!-- Load jQuery Core Framework, Version 1.12.4 -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-538L725');</script>
+<!-- End Google Tag Manager -->
+
+<meta name="keywords" content="media, gallery, images, videos, testimonials">
+<meta name="description" lang="en-AU" content="Key marketing and recruitment images and videos available for use by ECU staff.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.ecu.edu.au/service-centres/MACSC/gallery/">
+<meta property="og:title" content="Media Gallery">
+<meta property="og:description" content="Key marketing and recruitment images and videos available for use by ECU staff.">
+<meta property="og:site_name" content="ECU">
+<meta property="og:image" content="https://www.ecu.edu.au/service-centres/MACSC/gallery/2017-Open-Graph-Content-Dashboard.png">
+
+</head>
+
+<body class="mcscGallery">
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-538L725"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<div class="container-header">
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-md-12">
+
+                <div class="ecu-logo media">
+                    <a href="https://www.ecu.edu.au" class="pull-left">
+                        <span class="hidden">Visit ECU Homepage</span>
+                        <div class="ecu-logo-image"></div>
+                    </a>
+                    <div class="media-body">
+                        <h1 class="media-heading">Media Gallery<span class="media-heading">Brand and Marketing</span></h1>
+                    </div><!-- end div.media-body -->
+                </div>
+
+            </div><!-- end div.col-md-12 -->
+
+        </div><!-- end div.row -->
+
+    </div><!-- end div.container -->
+
+</div><!-- end div.container-header -->
+
+<!-- Headhesive Sticky Menu Header, scrolling past here activates headhesive -->
+<a href="#" id="showHere"><span class="hidden">Menu marker</span></a>
+
+<div class="container-body">
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-md-12">
+
+            
+<h3>Image Gallery</h3>
+
+<a class="btn btn-info" href="https://www.ecu.edu.au/service-centres/MACSC/gallery/" role="button"><span class="fa fa-caret-square-o-left"></span> Back to Gallery Listings</a>
+
+<p>These images are strictly for University use and will only be supplied to ECU staff members. <em><strong>They are <u>not</u> available to students.</strong></em>
+
+<div class="alert alert-info">
+	<p>We do not distribute copies of whole CDs. Please only request the images you require. You can always ask for more.</p>
+</div>
+
+<div class="gallery">
+	<div class="row">
+		<div class="col-xs-3">
+			<div class="thumbnail">
+				<img src="https://secure.ecu.edu.au/service-centres/MACSC/gallery/152/DSC01533.jpg" alt="DSC01533">
+				<div class="caption">
+					<p class="hidden-sm hidden-xs">DSC01533</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-3">
+			<div class="thumbnail">
+				<img src="https://secure.ecu.edu.au/service-centres/MACSC/gallery/152/DSC01536.jpg" alt="DSC01536">
+				<div class="caption">
+					<p class="hidden-sm hidden-xs">DSC01536</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-3">
+			<div class="thumbnail">
+				<img src="https://secure.ecu.edu.au/service-centres/MACSC/gallery/152/DSC01543.jpg" alt="DSC01543">
+				<div class="caption">
+					<p class="hidden-sm hidden-xs">DSC01543</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-3">
+			<div class="thumbnail">
+				<img src="https://secure.ecu.edu.au/service-centres/MACSC/gallery/152/DSC01558.jpg" alt="DSC01558">
+				<div class="caption">
+					<p class="hidden-sm hidden-xs">DSC01558</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-3">
+			<div class="thumbnail">
+				<img src="https://secure.ecu.edu.au/service-centres/MACSC/gallery/152/DSC01565.jpg" alt="DSC01565">
+				<div class="caption">
+					<p class="hidden-sm hidden-xs">DSC01565</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-3">
+			<div class="thumbnail">
+				<img src="https://secure.ecu.edu.au/service-centres/MACSC/gallery/152/DSC01566.jpg" alt="DSC01566">
+				<div class="caption">
+					<p class="hidden-sm hidden-xs">DSC01566</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-3">
+			<div class="thumbnail">
+				<img src="https://secure.ecu.edu.au/service-centres/MACSC/gallery/152/DSC01569.jpg" alt="DSC01569">
+				<div class="caption">
+					<p class="hidden-sm hidden-xs">DSC01569</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-3">
+			<div class="thumbnail">
+				<img src="https://secure.ecu.edu.au/service-centres/MACSC/gallery/152/DSC01576.jpg" alt="DSC01576">
+				<div class="caption">
+					<p class="hidden-sm hidden-xs">DSC01576</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-3">
+			<div class="thumbnail">
+				<img src="https://secure.ecu.edu.au/service-centres/MACSC/gallery/152/DSC01578.jpg" alt="DSC01578">
+				<div class="caption">
+					<p class="hidden-sm hidden-xs">DSC01578</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-3">
+			<div class="thumbnail">
+				<img src="https://secure.ecu.edu.au/service-centres/MACSC/gallery/152/DSC01595.jpg" alt="DSC01595">
+				<div class="caption">
+					<p class="hidden-sm hidden-xs">DSC01595</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-3">
+			<div class="thumbnail">
+				<img src="https://secure.ecu.edu.au/service-centres/MACSC/gallery/152/DSC01601.jpg" alt="DSC01601">
+				<div class="caption">
+					<p class="hidden-sm hidden-xs">DSC01601</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-3">
+			<div class="thumbnail">
+				<img src="https://secure.ecu.edu.au/service-centres/MACSC/gallery/152/DSC01604.jpg" alt="DSC01604">
+				<div class="caption">
+					<p class="hidden-sm hidden-xs">DSC01604</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-3">
+			<div class="thumbnail">
+				<img src="https://secure.ecu.edu.au/service-centres/MACSC/gallery/152/DSC01607.jpg" alt="DSC01607">
+				<div class="caption">
+					<p class="hidden-sm hidden-xs">DSC01607</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-3">
+			<div class="thumbnail">
+				<img src="https://secure.ecu.edu.au/service-centres/MACSC/gallery/152/DSC01624.jpg" alt="DSC01624">
+				<div class="caption">
+					<p class="hidden-sm hidden-xs">DSC01624</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-3">
+			<div class="thumbnail">
+				<img src="https://secure.ecu.edu.au/service-centres/MACSC/gallery/152/DSC01625.jpg" alt="DSC01625">
+				<div class="caption">
+					<p class="hidden-sm hidden-xs">DSC01625</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-3">
+			<div class="thumbnail">
+				<img src="https://secure.ecu.edu.au/service-centres/MACSC/gallery/152/DSC01629.jpg" alt="DSC01629">
+				<div class="caption">
+					<p class="hidden-sm hidden-xs">DSC01629</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-3">
+			<div class="thumbnail">
+				<img src="https://secure.ecu.edu.au/service-centres/MACSC/gallery/152/DSC01656.jpg" alt="DSC01656">
+				<div class="caption">
+					<p class="hidden-sm hidden-xs">DSC01656</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-3">
+			<div class="thumbnail">
+				<img src="https://secure.ecu.edu.au/service-centres/MACSC/gallery/152/DSC01657.jpg" alt="DSC01657">
+				<div class="caption">
+					<p class="hidden-sm hidden-xs">DSC01657</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-3">
+			<div class="thumbnail">
+				<img src="https://secure.ecu.edu.au/service-centres/MACSC/gallery/152/DSC01663.jpg" alt="DSC01663">
+				<div class="caption">
+					<p class="hidden-sm hidden-xs">DSC01663</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-3">
+			<div class="thumbnail">
+				<img src="https://secure.ecu.edu.au/service-centres/MACSC/gallery/152/DSC01667.jpg" alt="DSC01667">
+				<div class="caption">
+					<p class="hidden-sm hidden-xs">DSC01667</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-3">
+			<div class="thumbnail">
+				<img src="https://secure.ecu.edu.au/service-centres/MACSC/gallery/152/DSC01675.jpg" alt="DSC01675">
+				<div class="caption">
+					<p class="hidden-sm hidden-xs">DSC01675</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-3">
+			<div class="thumbnail">
+				<img src="https://secure.ecu.edu.au/service-centres/MACSC/gallery/152/DSC01687.jpg" alt="DSC01687">
+				<div class="caption">
+					<p class="hidden-sm hidden-xs">DSC01687</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-3">
+			<div class="thumbnail">
+				<img src="https://secure.ecu.edu.au/service-centres/MACSC/gallery/152/DSC01688.jpg" alt="DSC01688">
+				<div class="caption">
+					<p class="hidden-sm hidden-xs">DSC01688</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-3">
+			<div class="thumbnail">
+				<img src="https://secure.ecu.edu.au/service-centres/MACSC/gallery/152/DSC01692.jpg" alt="DSC01692">
+				<div class="caption">
+					<p class="hidden-sm hidden-xs">DSC01692</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-3">
+			<div class="thumbnail">
+				<img src="https://secure.ecu.edu.au/service-centres/MACSC/gallery/152/DSC01693.jpg" alt="DSC01693">
+				<div class="caption">
+					<p class="hidden-sm hidden-xs">DSC01693</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-3">
+			<div class="thumbnail">
+				<img src="https://secure.ecu.edu.au/service-centres/MACSC/gallery/152/DSC01695.jpg" alt="DSC01695">
+				<div class="caption">
+					<p class="hidden-sm hidden-xs">DSC01695</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-3">
+			<div class="thumbnail">
+				<img src="https://secure.ecu.edu.au/service-centres/MACSC/gallery/152/DSC01706.jpg" alt="DSC01706">
+				<div class="caption">
+					<p class="hidden-sm hidden-xs">DSC01706</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-3">
+			<div class="thumbnail">
+				<img src="https://secure.ecu.edu.au/service-centres/MACSC/gallery/152/DSC01729.jpg" alt="DSC01729">
+				<div class="caption">
+					<p class="hidden-sm hidden-xs">DSC01729</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-3">
+			<div class="thumbnail">
+				<img src="https://secure.ecu.edu.au/service-centres/MACSC/gallery/152/DSC01732.jpg" alt="DSC01732">
+				<div class="caption">
+					<p class="hidden-sm hidden-xs">DSC01732</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-3">
+			<div class="thumbnail">
+				<img src="https://secure.ecu.edu.au/service-centres/MACSC/gallery/152/DSC01740.jpg" alt="DSC01740">
+				<div class="caption">
+					<p class="hidden-sm hidden-xs">DSC01740</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-3">
+			<div class="thumbnail">
+				<img src="https://secure.ecu.edu.au/service-centres/MACSC/gallery/152/DSC01746.jpg" alt="DSC01746">
+				<div class="caption">
+					<p class="hidden-sm hidden-xs">DSC01746</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-3">
+			<div class="thumbnail">
+				<img src="https://secure.ecu.edu.au/service-centres/MACSC/gallery/152/DSC01752.jpg" alt="DSC01752">
+				<div class="caption">
+					<p class="hidden-sm hidden-xs">DSC01752</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-3">
+			<div class="thumbnail">
+				<img src="https://secure.ecu.edu.au/service-centres/MACSC/gallery/152/DSC01758.jpg" alt="DSC01758">
+				<div class="caption">
+					<p class="hidden-sm hidden-xs">DSC01758</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-3">
+			<div class="thumbnail">
+				<img src="https://secure.ecu.edu.au/service-centres/MACSC/gallery/152/DSC01761.jpg" alt="DSC01761">
+				<div class="caption">
+					<p class="hidden-sm hidden-xs">DSC01761</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-3">
+			<div class="thumbnail">
+				<img src="https://secure.ecu.edu.au/service-centres/MACSC/gallery/152/DSC01766.jpg" alt="DSC01766">
+				<div class="caption">
+					<p class="hidden-sm hidden-xs">DSC01766</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-3">
+			<div class="thumbnail">
+				<img src="https://secure.ecu.edu.au/service-centres/MACSC/gallery/152/DSC01780.jpg" alt="DSC01780">
+				<div class="caption">
+					<p class="hidden-sm hidden-xs">DSC01780</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-3">
+			<div class="thumbnail">
+				<img src="https://secure.ecu.edu.au/service-centres/MACSC/gallery/152/DSC01789.jpg" alt="DSC01789">
+				<div class="caption">
+					<p class="hidden-sm hidden-xs">DSC01789</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-3">
+			<div class="thumbnail">
+				<img src="https://secure.ecu.edu.au/service-centres/MACSC/gallery/152/DSC01794.jpg" alt="DSC01794">
+				<div class="caption">
+					<p class="hidden-sm hidden-xs">DSC01794</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-3">
+			<div class="thumbnail">
+				<img src="https://secure.ecu.edu.au/service-centres/MACSC/gallery/152/DSC01799.jpg" alt="DSC01799">
+				<div class="caption">
+					<p class="hidden-sm hidden-xs">DSC01799</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-3">
+			<div class="thumbnail">
+				<img src="https://secure.ecu.edu.au/service-centres/MACSC/gallery/152/DSC01816.jpg" alt="DSC01816">
+				<div class="caption">
+					<p class="hidden-sm hidden-xs">DSC01816</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-3">
+			<div class="thumbnail">
+				<img src="https://secure.ecu.edu.au/service-centres/MACSC/gallery/152/DSC01832.jpg" alt="DSC01832">
+				<div class="caption">
+					<p class="hidden-sm hidden-xs">DSC01832</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-3">
+			<div class="thumbnail">
+				<img src="https://secure.ecu.edu.au/service-centres/MACSC/gallery/152/DSC01834.jpg" alt="DSC01834">
+				<div class="caption">
+					<p class="hidden-sm hidden-xs">DSC01834</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-3">
+			<div class="thumbnail">
+				<img src="https://secure.ecu.edu.au/service-centres/MACSC/gallery/152/DSC01837.jpg" alt="DSC01837">
+				<div class="caption">
+					<p class="hidden-sm hidden-xs">DSC01837</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-3">
+			<div class="thumbnail">
+				<img src="https://secure.ecu.edu.au/service-centres/MACSC/gallery/152/DSC01843.jpg" alt="DSC01843">
+				<div class="caption">
+					<p class="hidden-sm hidden-xs">DSC01843</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-3">
+			<div class="thumbnail">
+				<img src="https://secure.ecu.edu.au/service-centres/MACSC/gallery/152/DSC01857.jpg" alt="DSC01857">
+				<div class="caption">
+					<p class="hidden-sm hidden-xs">DSC01857</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-3">
+			<div class="thumbnail">
+				<img src="https://secure.ecu.edu.au/service-centres/MACSC/gallery/152/DSC01864.jpg" alt="DSC01864">
+				<div class="caption">
+					<p class="hidden-sm hidden-xs">DSC01864</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-3">
+			<div class="thumbnail">
+				<img src="https://secure.ecu.edu.au/service-centres/MACSC/gallery/152/DSC01871.jpg" alt="DSC01871">
+				<div class="caption">
+					<p class="hidden-sm hidden-xs">DSC01871</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-3">
+			<div class="thumbnail">
+				<img src="https://secure.ecu.edu.au/service-centres/MACSC/gallery/152/DSC01873.jpg" alt="DSC01873">
+				<div class="caption">
+					<p class="hidden-sm hidden-xs">DSC01873</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-3">
+			<div class="thumbnail">
+				<img src="https://secure.ecu.edu.au/service-centres/MACSC/gallery/152/DSC01881.jpg" alt="DSC01881">
+				<div class="caption">
+					<p class="hidden-sm hidden-xs">DSC01881</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-3">
+			<div class="thumbnail">
+				<img src="https://secure.ecu.edu.au/service-centres/MACSC/gallery/152/DSC01883.jpg" alt="DSC01883">
+				<div class="caption">
+					<p class="hidden-sm hidden-xs">DSC01883</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-3">
+			<div class="thumbnail">
+				<img src="https://secure.ecu.edu.au/service-centres/MACSC/gallery/152/DSC01886.jpg" alt="DSC01886">
+				<div class="caption">
+					<p class="hidden-sm hidden-xs">DSC01886</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-3">
+			<div class="thumbnail">
+				<img src="https://secure.ecu.edu.au/service-centres/MACSC/gallery/152/DSC01891.jpg" alt="DSC01891">
+				<div class="caption">
+					<p class="hidden-sm hidden-xs">DSC01891</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-3">
+			<div class="thumbnail">
+				<img src="https://secure.ecu.edu.au/service-centres/MACSC/gallery/152/DSC01904.jpg" alt="DSC01904">
+				<div class="caption">
+					<p class="hidden-sm hidden-xs">DSC01904</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-3">
+			<div class="thumbnail">
+				<img src="https://secure.ecu.edu.au/service-centres/MACSC/gallery/152/DSC01906.jpg" alt="DSC01906">
+				<div class="caption">
+					<p class="hidden-sm hidden-xs">DSC01906</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-3">
+			<div class="thumbnail">
+				<img src="https://secure.ecu.edu.au/service-centres/MACSC/gallery/152/DSC01909.jpg" alt="DSC01909">
+				<div class="caption">
+					<p class="hidden-sm hidden-xs">DSC01909</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-3">
+			<div class="thumbnail">
+				<img src="https://secure.ecu.edu.au/service-centres/MACSC/gallery/152/DSC01912.jpg" alt="DSC01912">
+				<div class="caption">
+					<p class="hidden-sm hidden-xs">DSC01912</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-3">
+			<div class="thumbnail">
+				<img src="https://secure.ecu.edu.au/service-centres/MACSC/gallery/152/DSC01914.jpg" alt="DSC01914">
+				<div class="caption">
+					<p class="hidden-sm hidden-xs">DSC01914</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-3">
+			<div class="thumbnail">
+				<img src="https://secure.ecu.edu.au/service-centres/MACSC/gallery/152/DSC01919.jpg" alt="DSC01919">
+				<div class="caption">
+					<p class="hidden-sm hidden-xs">DSC01919</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-3">
+			<div class="thumbnail">
+				<img src="https://secure.ecu.edu.au/service-centres/MACSC/gallery/152/DSC01920.jpg" alt="DSC01920">
+				<div class="caption">
+					<p class="hidden-sm hidden-xs">DSC01920</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-3">
+			<div class="thumbnail">
+				<img src="https://secure.ecu.edu.au/service-centres/MACSC/gallery/152/DSC01921.jpg" alt="DSC01921">
+				<div class="caption">
+					<p class="hidden-sm hidden-xs">DSC01921</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-3">
+			<div class="thumbnail">
+				<img src="https://secure.ecu.edu.au/service-centres/MACSC/gallery/152/DSC01960.jpg" alt="DSC01960">
+				<div class="caption">
+					<p class="hidden-sm hidden-xs">DSC01960</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-3">
+			<div class="thumbnail">
+				<img src="https://secure.ecu.edu.au/service-centres/MACSC/gallery/152/DSC01961.jpg" alt="DSC01961">
+				<div class="caption">
+					<p class="hidden-sm hidden-xs">DSC01961</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-3">
+			<div class="thumbnail">
+				<img src="https://secure.ecu.edu.au/service-centres/MACSC/gallery/152/DSC01983.jpg" alt="DSC01983">
+				<div class="caption">
+					<p class="hidden-sm hidden-xs">DSC01983</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-3">
+			<div class="thumbnail">
+				<img src="https://secure.ecu.edu.au/service-centres/MACSC/gallery/152/DSC01985.jpg" alt="DSC01985">
+				<div class="caption">
+					<p class="hidden-sm hidden-xs">DSC01985</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-3">
+			<div class="thumbnail">
+				<img src="https://secure.ecu.edu.au/service-centres/MACSC/gallery/152/DSC01988.jpg" alt="DSC01988">
+				<div class="caption">
+					<p class="hidden-sm hidden-xs">DSC01988</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-3">
+			<div class="thumbnail">
+				<img src="https://secure.ecu.edu.au/service-centres/MACSC/gallery/152/DSC01992.jpg" alt="DSC01992">
+				<div class="caption">
+					<p class="hidden-sm hidden-xs">DSC01992</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-3">
+			<div class="thumbnail">
+				<img src="https://secure.ecu.edu.au/service-centres/MACSC/gallery/152/DSC01997.jpg" alt="DSC01997">
+				<div class="caption">
+					<p class="hidden-sm hidden-xs">DSC01997</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-3">
+			<div class="thumbnail">
+				<img src="https://secure.ecu.edu.au/service-centres/MACSC/gallery/152/DSC02004.jpg" alt="DSC02004">
+				<div class="caption">
+					<p class="hidden-sm hidden-xs">DSC02004</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-3">
+			<div class="thumbnail">
+				<img src="https://secure.ecu.edu.au/service-centres/MACSC/gallery/152/DSC02007.jpg" alt="DSC02007">
+				<div class="caption">
+					<p class="hidden-sm hidden-xs">DSC02007</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-3">
+			<div class="thumbnail">
+				<img src="https://secure.ecu.edu.au/service-centres/MACSC/gallery/152/DSC02019.jpg" alt="DSC02019">
+				<div class="caption">
+					<p class="hidden-sm hidden-xs">DSC02019</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-3">
+			<div class="thumbnail">
+				<img src="https://secure.ecu.edu.au/service-centres/MACSC/gallery/152/DSC02028.jpg" alt="DSC02028">
+				<div class="caption">
+					<p class="hidden-sm hidden-xs">DSC02028</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-3">
+			<div class="thumbnail">
+				<img src="https://secure.ecu.edu.au/service-centres/MACSC/gallery/152/DSC02030.jpg" alt="DSC02030">
+				<div class="caption">
+					<p class="hidden-sm hidden-xs">DSC02030</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-3">
+			<div class="thumbnail">
+				<img src="https://secure.ecu.edu.au/service-centres/MACSC/gallery/152/DSC02032.jpg" alt="DSC02032">
+				<div class="caption">
+					<p class="hidden-sm hidden-xs">DSC02032</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-3">
+			<div class="thumbnail">
+				<img src="https://secure.ecu.edu.au/service-centres/MACSC/gallery/152/DSC02038.jpg" alt="DSC02038">
+				<div class="caption">
+					<p class="hidden-sm hidden-xs">DSC02038</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-3">
+			<div class="thumbnail">
+				<img src="https://secure.ecu.edu.au/service-centres/MACSC/gallery/152/DSC02042.jpg" alt="DSC02042">
+				<div class="caption">
+					<p class="hidden-sm hidden-xs">DSC02042</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>
+
+
+            </div><!-- end div.col-md-12 -->
+
+        </div><!-- end div.row -->
+
+    </div><!-- end div.container -->
+
+</div><!-- end div.container-body -->
+
+<div class="container-footer">
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-md-12">
+
+                <ul class="footer">
+                    <li><a href="https://www.ecu.edu.au/copyright">&copy; ECU</a><span class="footer-link-divider">|</span></li>
+                    <li><a href="https://www.ecu.edu.au/disclaimer">Disclaimer</a><span class="footer-link-divider">|</span></li>
+                    <li><a href="https://www.ecu.edu.au/privacy">Privacy</a><span class="footer-link-divider">|</span></li>
+                    <li><a href="https://www.ecu.edu.au/emergency">Emergency</a><span class="footer-link-divider">|</span></li>
+                    <li><a href="https://www.ecu.edu.au/sitemap">Sitemap</a><span class="footer-link-divider">|</span></li>
+                    <li><a href="https://www.ecu.edu.au/contact">Contact</a><span class="footer-link-divider">|</span></li>
+                    <li><a href="https://www.ecu.edu.au/cricos">CRICOS IPC 00279B</a> <span class="footer-link-divider">|</span></li>
+                    <li><a href="https://www.ecu.edu.au/rto">RTO Provider: 4756</a> <span class="footer-link-divider">|</span></li>
+                    <li><a href="https://www.ecu.edu.au/teqsa">TEQSA Number: PRV12160</a></li>
+                </ul>
+
+            </div><!-- end div.col-md-12 -->
+
+        </div><!-- end div.row -->
+
+    </div><!-- end div.container -->
+
+</div><!-- end div.container-footer -->
+
+<!-- Load jQuery UI, Version 1.11.4 -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+
+<!-- Load Twitter Bootstrap, Version 3.2.0 -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+<!-- Load Sidr, Version 2.2.1 -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/sidr/2.2.1/jquery.sidr.min.js"></script>
+
+<!-- Load headhesive, Version 1.2.4 -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/headhesive/1.2.4/headhesive.min.js"></script>
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+    <script src="//cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="//cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<!-- Load Application Style Javascript Library, Version 2015 -->
+<script src="https://cdn.ecu.net.au/__data/assets/js_file/0009/623925/static.js"></script>
+
+</body>
+</html>
